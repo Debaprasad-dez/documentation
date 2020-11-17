@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+       font-family: 'Poppins', sans-serif; 
+    }
+    body{
+      background: rgb(250, 250, 250);
+     
+   
+    }
+    #code::-webkit-scrollbar {
+    display: none;
+    }
+    #cat:focus{
+        background: #000 !important;
+        color: white !important;
+    }
+    #contentx img{
+      width: 100%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    
+    p{
+      font-size: 2vh;
+    }
+   
+    
+    #minright{
+      font-size: 10px;
+      background: rgba(0, 132, 255, 0.8);
+    }
+    
+    #infi{
+      font-size: 8vh;
+    }
+    #foothot{
+      font-family: 'Raleway', sans-serif;
+    }
+    #footbot{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .carousel .carousel-control-prev-icon {
+    background-image: none;
+    }
+    .carousel .carousel-control-next-icon {
+    background-image: none;
+    }
+    .carousel-indicators li{
+      background-color: rgba(245, 245, 220, 0);
+    }
+    @media screen and (max-width: 767px) {
+       #viewcar {
+          height: 50vh;
+        }
+       #viewcar2 {
+          border-radius: 15px;
+        }
+        #biglogy{
+          float: left;
+        }
+        #infi{
+          font-size: 5vh;
+        }
+        #map{
+            display: none;
+        }
+      }
+</style>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logy.AI</title>
+</head>
+<body>
+
+
+
+    <!--Navbar-->
+    <nav class="sticky-top" >
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
+        <div class="container ">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand p-0" href="https://logy.ai/" style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span style="color: #428bca;">AI</span></a>
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+          
+              <!-- Links -->
+              <ul class="mr-auto"></ul>
+              <!-- Links -->
+          
+              <form class="form-inline p-0 m-0">
+                <div class="md-form my-0 mx-3 ">
+                  <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
+                </div>
+                <div class="md-form my-0 mx-3 ">
+                  <a href="/articles/" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
+                </div>
+              </form>
+            </div>
+            <!-- Collapsible content -->
+          
+        </div>
+        </nav>
+    </nav>
+  <!--/.Navbar-->
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+ 
+ <div class="container mt-4 mb-4">
+
+    <div class="row">
+        <div class="col-md-2 ">
+            <div class="sticky-top px-3 bg-white py-3 rounded" style="top: 100px;" id="map">
+
+                <h5 class=" my-3" >Get started</h5>
+                <a href="#p1"><p  class="m-0">introduction</p></a>
+                <a href="#p2"><p  class="m-0">Easy Embedding</p></a>
+                <a href="#p3"><p  class="m-0">Part 3</p></a>
+                <h5 class=" my-3" >Another Section</h5>
+                <a href="#"><p  class="m-0">introduction</p></a>
+                <a href="#"><p  class="m-0">part 2</p></a>
+                <a href="#"><p  class="m-0">Part 3</p></a>
+            </div>
+            
+            
+        </div>
+        <div class="col-md-10">
+            <h5 class="px-3 ">Documentation
+            </h5>
+            <div class="col-md-3 ml-3 mb-4 " style="height: 2px;background: #5697d0;width: 75%;"></div>
+             
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="px-3 pb-2"><strong> Get Started</strong>
+                    </h2>
+                    <h4 class="px-3" id="p1">Introduction</h4>
+                    <p class="px-3">The Maps Embed API lets you place an interactive map, or Street View panorama on your site with a simple HTTP request. It can be easily embedded in your web page or blog by setting the Maps Embed API URL as the src attribute of an iframe:</p>
+                    <img src="https://c.files.bbci.co.uk/5435/production/_113475512__110894880_gettyimages-1055182908.jpg" alt="" class="px-3 w-100 mb-3">
+                </div>
+        <div class="col-md-6" style="height: 100%;">
+        
+        
+<div class=" p-4 bg-dark rounded" >
+<div class="sample-code ">
+<pre class="text-white small" translate="no" dir="ltr" id="code">
+&lt;iframe
+width="600"
+height="450"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?key=<span data-devsite-credential-type="api_key" class="px-1" style="border: dashed 1px green;">API_KEY</span>
+&amp;q=Space+Needle,Seattle+WA" allowfullscreen&gt;
+&lt;/iframe&gt;</pre>
+</div>
+                    
+                </div>
+            </div>
+            </div>
+        
+        
+        
+        
+        
+            <div class="row" id="p2">
+                <div class="col-md-6">
+        
+                    <h4 class="px-3" >Easy embedding</h4>
+                    <p class="px-3">Maps Embed API maps are easy to add to your webpage—just set the URL you build as the value of an iframe's src attribute. Control the size of the map with the iframe's height and width attributes. No JavaScript required.</p>
+                    <img src="https://c.files.bbci.co.uk/5435/production/_113475512__110894880_gettyimages-1055182908.jpg" alt="" class="px-3 w-100 mb-3">
+                </div>
+        <div class="col-md-6" style="height: 100%;">
+        <h6>JSON code</h6>
+        <div class=" p-4 bg-dark rounded" style="height: 100%;">
+        <div class="sample-code ">
+<pre class="text-white" translate="no" dir="ltr" id="code">
+{
+"account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"api_version": "2010-04-01",
+error_code": null,
+"status": "sent",
+"subresource_uris": {
+"media": "/2010-04-01/Accounts/ACXXXX/Messages/SMXX/Media.json"
+},
+"to": "whatsapp:+15005550006",
+"uri": "/2010-04-01/Accounts/ACXXXXXXX/Messages/SMXXXX.json"
+}
+    </pre>
+        </div>
+        </div>
+                </div>
+            </div>
+            <div class="row my-4" id="p3">
+                <div class="col-md-6">
+                    
+                    <h4 class="px-3" >Part3</h4>
+                    <p class="px-3">The Maps Embed API lets you place an interactive map, or Street View panorama on your site with a simple HTTP request. It can be easily embedded in your web page or blog by setting the Maps Embed API URL as the src attribute of an iframe:</p>
+                    <img src="https://c.files.bbci.co.uk/5435/production/_113475512__110894880_gettyimages-1055182908.jpg" alt="" class="px-3 w-100 mb-3">
+                </div>
+        <div class="col-md-6" style="height: 100%;">
+        
+        
+<div class=" p-4 bg-dark rounded" >
+<div class="sample-code ">
+<pre class="text-white small" translate="no" dir="ltr" id="code">
+&lt;iframe
+width="600"
+height="450"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?key=<span data-devsite-credential-type="api_key" class="px-1" style="border: dashed 1px green;">API_KEY</span>
+&amp;q=Space+Needle,Seattle+WA" allowfullscreen&gt;
+&lt;/iframe&gt;</pre>
+</div>
+                    
+                </div>
+            </div>
+            </div>
+            <footer class="page-footer font-small unique-color-white text-dark pt-3" style="background: white;">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left mt-5">
+              
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+              
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+                            <!-- Content -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Logy.AI</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p id="footbot">Build quality Artificial Intelligence with minimum effort and without writing a single line of code.
+                                We help you bring your ideas to reality with user-friendly AI building tools. (Legal name of the company: Nex Fitzap Private Limited)
+                                </p>
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Products</h6>
+                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p >
+                                <a class="text-primary" id="footbot" href="https://logy.ai/portal.html">Dental AI</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
+                            </p>
+                          <!--  <p>
+                                <a href="#!">Pricing</a>
+                            </p> -->
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/dentalai_pricing.html">DentalAI Pricing</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/privacy.html">Privacy Policy</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/terms_and_conditions.html">Terms and Conditions / Cancellation Policy</a>
+                            </p>
+                            
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Contact</h6>
+                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p id="footbot">
+                                <i class="fa fa-home mr-3"></i> India / Singapore</p>
+                            <p id="footbot">
+                                <i class="fa fa-envelope mr-3"></i> humans@logy.ai</p>
+                            <p id="footbot">
+                                <i class="fa fa-phone mr-3"></i> +91 70019 72016</p>
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                    </div>
+                    <!-- Grid row -->
+              
+                </div>
+                <!-- Footer Links -->
+              
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-dark" style="background: white;" id="footbot"> Copyright ©
+                    <a class="text-primary" id="footbot" href="https://logy.ai"> Nex Fitzap Private Limited</a>
+                </div>
+                <!-- Copyright -->
+              
+              </footer>
+        </div>
+    </div>
+
+    
+
+
+     
+</div>
+
+
+
+
+</body>
+
+</html>
